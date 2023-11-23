@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yeolahop Restaurant</title>
+
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Style  -->
+    <link rel="stylesheet" href="css\style.css" />
+
+</head>
+<body>
+
+    <div class="header-area">
+                <div class="navbar-container">
+                    <h1 class="logo">열아홉</h1>
+                    <ul class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <div class="dropdown">
+                            <li><a href="#home">Menu</a></li>
+                            <div class="dropdown-content">
+                            <a href="menu-appetizer.html">Appetizer</a>
+                            <a href="menu-main-course.html">Main Course</a>
+                            <a href="menu-beverage.html">Beverage</a>
+                            <a href="menu-dessert.html">Dessert</a>
+                            </div>
+                        </div>
+                        <li><a href="#" id="shopping-cart-button">Order</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        </ul>
+                </div>
+    </div>
+
+    <div class="head-maincourse">
+        <h1>Main Course</h1>
+    </div>
+
+    <!-- Shopping Cart start -->
+    <div class="shopping-cart">
+            <h4>Order Cart</h4>
+            <ul id="cart-items"></ul>
+            <div class="total-order">
+                <p>Total: Rp<span id="cart-total">0.00</span></p>
+                <a href="order-form.html"><img src="assets\checkout.png"></a>
+
+            </div>
+    </div>
+
+    <div class="menu-maincourse">
+         <div class="menu-1">
+                <div class="konten-1"> 
+                    <img src="assets\buldak.jpg" alt="food" />
+                    <h2> Buldak </h2>
+                    <h4> Rp30.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Buldak', 30.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Buldak', 30.000)" />
+                    </div>
+                </div>
+      
+                <div class="konten-2"> 
+                    <img src="assets\bulgogi.jpg" alt="food" />
+                    <h2> Bulgogi </h2>
+                    <h4> Rp40.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Bulgogi', 40.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Bulgogi', 40.000)" />
+                    </div>
+                </div>
+      
+                <div class="konten-3"> 
+                    <img src="assets\boukkeumyeon.jpg" alt="food" />
+                    <h2> Boukkeumyeon </h2>
+                    <h4> Rp30.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Boukkeumyeon', 30.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Boukkeumyeon', 30.000)" />
+                    </div>
+                </div>
+      
+                <div class="konten-4">
+                    <img src="assets\dosirak---.jpg" alt="food" />
+                    <h2> Dosirak </h2>
+                    <h4> Rp45.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Dosirak', 45.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Dosirak', 45.000)" />
+                    </div>
+                </div>
+         </div>
+      
+            <div class="menu-2">
+                <div class="konten-5"> 
+                    <img src="assets\tteokkbokki.jpg" alt="food" />
+                    <h2> Tteokkbokki </h2>
+                    <h4> Rp30.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Tteokkbokki', 30.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Tteokkbokki', 30.000)" />
+                    </div>
+                </div>
+      
+                <div class="konten-6"> 
+                    <img src="assets\jajangmyeon.jpg" alt="food" />
+                    <h2> Jajangmyeon </h2>
+                    <h4> Rp35.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Jajangmyeon', 35.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Jajangmyeon', 35.000)" />
+                    </div>
+                </div>
+      
+                <div class="konten-7"> 
+                    <img src="assets\tteokgalni.jpg" alt="food" />
+                    <h2> Tteokgalbi </h2>
+                    <h4> Rp45.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Tteokgalbi', 45.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Tteokgalbi', 45.000)" />
+                    </div>
+                </div>
+      
+                <div class="konten-8">
+                    <img src="assets\bokkeumbap.jpg" alt="food" />
+                    <h2> Bokkeumbap </h2>
+                    <h4> Rp30.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Bokkeumbap', 30.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Bokkeumbap', 30.000)" />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-3">
+                <div class="konten-9"> 
+                    <img src="assets\dak-galbi.jpg" alt="food" />
+                    <h2> Dakgalbi </h2>
+                    <h4> Rp30.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Dakgalbi', 30.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Dakgalbi', 30.000)" />
+                    </div>
+                </div>
+      
+                <div class="konten-10"> 
+                    <img src="assets\bibimbap.jpg" alt="food" />
+                    <h2> Bibimbap </h2>
+                    <h4> Rp25.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Bibimbap', 25.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Bibimbap', 25.000)" />
+                    </div>
+                </div>
+      
+                <div class="konten-11"> 
+                    <img src="assets\japchae.jpg" alt="food" />
+                    <h2> japchae </h2>
+                    <h4> Rp30.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('japchae', 30.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('japchae', 30.000)" />
+                    </div>
+                </div>
+      
+                <div class="konten-12">
+                    <img src="assets\samyang.jpg" alt="food" />
+                    <h2> Samyang </h2>
+                    <h4> Rp30.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Samyang', 30.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Samyang', 30.000)" />
+                    </div>
+                </div>
+            </div>
+      </div>
+
+    <div class="footer11">
+            <div class="logo11">
+                <div class="logo2">
+                    <h1>열아홉</h1>
+                    <h4>Yeolahop Restaurant</h4>
+                </div>
+                
+            </div>
+
+            <div class="fcontent">
+                <h1>Content</h1>
+                <a href="index.html">Home</a>
+                <a href="menu-appetizer.html">Menu</a>
+                <div class="fmenu">
+                    <a href="menu-appetizer.html">Appetizer</a>
+                    <a href="menu-main-course.html">Main Course</a>
+                    <a href="menu-beverage.html">Beverage</a>
+                    <a href="menu-dessert.html">Dessert</a>
+                </div>
+                <a href="about-us.html">About Us</a>
+            </div>
+
+            <div class="fcontact" id="section1">
+                <h1>Contact</h1>
+                <h2>+6283762672787</h2>
+                <h2>yeolahop@gmail.com</h2>
+                <div class="logo3">
+                    <a href="URL_TUJUAN">
+                        <img src="assets\instagram.svg">
+                    </a>
+                    <a href="URL_TUJUAN">
+                        <img src="assets\icons8-tiktok-100.png">
+                    </a>
+                    <a href="URL_TUJUAN">
+                        <img src="assets\facebook.svg">
+                    </a>
+                </div>
+            </div>
+            
+    </div>
+
+    <div class="footer" style="color: white;">
+        Copyright &copy; Group 19
+    </div>
+
+    <!-- Javascript  -->
+    <script src="js\script.js"></script>
+
+</body>
+</html>

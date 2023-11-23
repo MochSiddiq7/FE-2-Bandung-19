@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yeolahop Restaurant</title>
+
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Style  -->
+    <link rel="stylesheet" href="css\style.css" />
+
+</head>
+<body>
+    
+    <div class="header-area">
+                <div class="navbar-container">
+                    <h1 class="logo">열아홉</h1>
+                    <ul class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <div class="dropdown">
+                            <li><a href="#home">Menu</a></li>
+                            <div class="dropdown-content">
+                            <a href="menu-appetizer.html">Appetizer</a>
+                            <a href="menu-main-course.html">Main Course</a>
+                            <a href="menu-beverage.html">Beverage</a>
+                            <a href="menu-dessert.html">Dessert</a>
+                            </div>
+                        </div>
+                        <li><a href="#" id="shopping-cart-button">Order</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        </ul>
+                </div>
+    </div>
+
+    <div class="headbev">
+        <h1>Beverage</h1>
+    </div>
+
+    <!-- Shopping Cart start -->
+    <div class="shopping-cart">
+            <h4>Order Cart</h4>
+            <ul id="cart-items"></ul>
+            <div class="total-order">
+                <p>Total: Rp<span id="cart-total">0.00</span></p>
+                <a href="order-form.html"><img src="assets\checkout.png"></a>
+
+            </div>
+    </div>
+
+    <div class="menu-drink">
+            <div class="menu-5">
+                <div class="konten-17"> 
+                    <img src="assets\daechu cha.jpg" alt="food" />
+                    <h2> Daechu Cha </h2>
+                    <h4> Rp20.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Daechu Cha', 20.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Daechu Cha', 20.000)" />
+                    </div>
+                </div>
+        
+                <div class="konten-18"> 
+                    <img src="assets\mogwa cha.jpg" alt="food" />
+                    <h2> Mogwa Cha </h2>
+                    <h4> Rp20.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Mogwa Cha', 20.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Mogwa Cha', 20.000)" />
+                    </div>
+                </div>
+        
+                <div class="konten-19"> 
+                    <img src="assets\Saenggang-cha.jpg" alt="food" />
+                    <h2> Saenggang Cha </h2>
+                    <h4> Rp15.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Saenggang Cha', 15.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Saenggang Cha', 15.000)" />
+                    </div>
+                </div>
+        
+                <div class="konten-20">
+                    <img src="assets\teh-omija.jpg" alt="food" />
+                    <h2> Omija Cha </h2>
+                    <h4> Rp17.000 </h4>
+                    <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Omija Cha', 17.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Omija Cha', 17.000)" />
+                    </div>
+                </div>
+            </div>
+        
+           <div class="menu-6">
+               <div class="konten-21"> 
+                   <img src="assets\sujeonggwa.jpg" alt="food" />
+                   <h2> Sujeonggwa </h2>
+                   <h4> Rp22.000 </h4>
+                   <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Sujeonggwa', 22.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Sujeonggwa', 22.000)" />
+                    </div>
+               </div>
+      
+               <div class="konten-22"> 
+                   <img src="assets\sikhye.jpg" alt="food" />
+                   <h2> Sikhye </h2>
+                   <h4> Rp22.000 </h4>
+                   <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Sikhye', 22.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Sikhye', 22.000)" />
+                    </div>
+               </div>
+      
+               <div class="konten-23"> 
+                   <img src="assets\nok cha.jpg" alt="food" />
+                   <h2> Nok Cha </h2>
+                   <h4> Rp18.000 </h4>
+                   <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Nok Cha', 18.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Nok Cha', 18.000)" />
+                    </div>
+               </div>
+      
+               <div class="konten-24">
+                   <img src="assets\yuja cha.jpg" alt="food" />
+                   <h2> Yuja Cha </h2>
+                   <h4> Rp20.000 </h4>
+                   <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Yuja Cha', 20.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Yuja Cha', 20.000)" />
+                    </div>
+               </div>
+           </div>
+        
+           <div class="menu-6">
+            <div class="konten-21"> 
+                <img src="assets\lemontea.jpg" alt="food" />
+                <h2> Lemontea </h2>
+                <h4> Rp20.000 </h4>
+                <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Lemontea', 20.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Lemontea', 20.000)" />
+                    </div>
+            </div>
+   
+            <div class="konten-22"> 
+                <img src="assets\banana milk.jpg" alt="food" />
+                <h2> Banana Milk </h2>
+                <h4> Rp20.000 </h4>
+                <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Banana Milk', 20.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Banana Milk', 20.000)" />
+                    </div>
+            </div>
+   
+            <div class="konten-23"> 
+                <img src="assets\mineral.jpg" alt="food" />
+                <h2> Mineral Water </h2>
+                <h4> Rp10.000 </h4>
+                <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Mineral Water', 10.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Mineral Water', 10.000)" />
+                    </div>
+            </div>
+   
+            <div class="konten-24">
+                <img src="assets\orange juice.jpg" alt="food" />
+                <h2> Orange Juice </h2>
+                <h4> Rp25.000 </h4>
+                <div class="menu-button">
+                        <img class="remove-order" style="float: left;" src="assets\minus-circle.svg" onclick="removeFromcart('Orange Juice', 25.000)" />
+                        <img class="add-order" style="float: right;" src="assets\plus-circle.svg" onclick="addToCart('Orange Juice', 25.000)" />
+                    </div>
+            </div>
+        </div>
+           
+    </div>
+
+    <div class="footer11">
+            <div class="logo11">
+                <div class="logo2">
+                    <h1>열아홉</h1>
+                    <h4>Yeolahop Restaurant</h4>
+                </div>
+                
+            </div>
+
+            <div class="fcontent">
+                <h1>Content</h1>
+                <a href="index.html">Home</a>
+                <a href="menu-appetizer.html">Menu</a>
+                <div class="fmenu">
+                    <a href="menu-appetizer.html">Appetizer</a>
+                    <a href="menu-main-course.html">Main Course</a>
+                    <a href="menu-beverage.html">Beverage</a>
+                    <a href="menu-dessert.html">Dessert</a>
+                </div>
+                <a href="about-us.html">About Us</a>
+            </div>
+
+            <div class="fcontact" id="section1">
+                <h1>Contact</h1>
+                <h2>+6283762672787</h2>
+                <h2>yeolahop@gmail.com</h2>
+                <div class="logo3">
+                    <a href="URL_TUJUAN">
+                        <img src="assets\instagram.svg">
+                    </a>
+                    <a href="URL_TUJUAN">
+                        <img src="assets\icons8-tiktok-100.png">
+                    </a>
+                    <a href="URL_TUJUAN">
+                        <img src="assets\facebook.svg">
+                    </a>
+                </div>
+            </div>
+            
+    </div>
+
+    <div class="footer" style="color: white;">
+        Copyright &copy; Group 19
+    </div>
+
+    <!-- Javascript  -->
+    <script src="js\script.js"></script>
+
+</body>
+</html>

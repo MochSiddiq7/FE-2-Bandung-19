@@ -1,0 +1,7 @@
+// Mendapatkan elemen gambar
+var img = document.querySelector(".order-button");
+
+// Menambahkan event listener
+img.addEventListener("click", function () {
+  alert("Your order succeeds! Food will be delivered immedietly");
+});
