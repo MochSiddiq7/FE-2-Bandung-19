@@ -14,11 +14,6 @@ body {
   font-family: 'dosis', sans-serif;
 }
 
-
-
-
-
-
 /* ............/navbar/............ */
 .navbar input[type="checkbox"],
 
@@ -59,7 +54,7 @@ body {
 }
 
 .menu-items a:hover {
-  color: #a2c69a;
+  color: #9cc29c;
   transition: color 0.3s ease-in-out;
 }
 
@@ -77,13 +72,11 @@ body {
 
 
 /* ///////////..dropdown../////////// */
-  /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
     display:inline-block;
   }
   
-  /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
     position: absolute;
@@ -94,29 +87,27 @@ body {
     margin-top: -30px;
   }
   
-  /* Links inside the dropdown */
   .dropdown-content a {
     color: whitesmoke;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
+
+  .dropdown-content a:hover {
+    color: #242724;
+    transition: color 0.3s ease-in-out;
+  }
   
-  /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd;}
   
-  /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
 
 /* ///////////..header../////////// */
 .header-area{
     height: 500px;
-    background-image: url("assets\header.jpg");
     margin: 0px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -326,6 +317,7 @@ body {
 }
 
 
+
 .menu-appetizer h1{
   font-size: 30px;
   color: white;
@@ -357,9 +349,6 @@ body {
 .menu-button{
   padding: 1px 40px;
 }
-
-
-
 
 .konten-2 {
   background-color: white;
@@ -1198,6 +1187,17 @@ label {
     height: 15px;
   }
 
+  .header-area {
+    max-width: 768px
+  }
+
+  #person-name{
+    font-size: 13px;
+  }
+
+  #person-role{
+    font-size: 10px;
+  }
 }
 
   
@@ -1238,7 +1238,7 @@ label {
 /* Mobile Phone */
 @media (max-width: 450px) {
   html {
-    font-size: 20%;
+    font-size: 30%;
   }
 
   .shopping-cart{
@@ -1253,35 +1253,38 @@ label {
     height: 10px;
   }
 
-}
-
   .logo2 h1{
-    font-size: 40px;
+    font-size: 18px;
   }
 
   .logo2 h4{
-    font-size: 20px;
+    font-size: 15px;
   }
 
+  .fcontent a{
+    font-size: 15px;
+  }
+}
 
-
-
+  
   /* //////////////////////..About Us..////////////////////// */
 
 .profile{
-  padding-top: 60px;
-  background-color: #2D2E2F;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  background-color: #E2EEE6;
 }
 
 .profile h1{
   text-align: center;
-  color: whitesmoke;
+  color: #2D2E2F;
+  padding-bottom: 15px;
 }
 
 
 
 .profile-1 {
-  background-color: #2D2E2F;
+  background-color: #E2EEE6;
   display: flex;
 }
 
@@ -1294,10 +1297,12 @@ label {
   padding-bottom: 15px;
   border-radius: 10px;
 }
-.person-1 img {
-  max-width: 200px;
-  border-radius: 10px;
+
+#linkedin-profile {
+  height: 35px;
+  padding: 10px;
   }
+
 .person-1 h4{
   font: lighter ;
 }
@@ -1305,8 +1310,18 @@ label {
   padding: 1px 40px;
 }
 
+#person-img{
+  height: 150px;
+  border-radius: 10px;
+}
 
+#person-name{
+  padding: 10px;
+}
 
+#person-role{
+  font-size: 15px;
+}
 
 .person-2 {
   background-color: white;
@@ -1353,9 +1368,9 @@ label {
   border-radius: 10px;
   }
 
-/* ///////////..menu appetizer baris 2../////////// */
+/* ///////////..profile baris 2../////////// */
 .profile-2 {
-  background-color: #2D2E2F;
+  background-color: #E2EEE6;
   display: flex;
   justify-content: center;
 }

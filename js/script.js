@@ -59,11 +59,12 @@ function updateCartDisplay() {
   const total = cart.reduce((acc, item) => acc + item.price, 0);
   cartTotalElement.textContent = total.toFixed(3);
 
-  // Menetapkan nilai total harga ke dalam input dengan ID 'form-total'
-  document.querySelector(".form-total input").value = total.toFixed(3);
-
   // Menyimpan total harga ke dalam localStorage
   saveTotalToLocalStorage(total.toFixed(3));
+
+  // Menetapkan nilai total harga ke dalam input dengan ID 'form-total'
+  //document.querySelector(".form-total input").value = total.toFixed(3);
+
 }
 
 // Fungsi untuk menyimpan keranjang ke dalam localStorage
@@ -85,29 +86,4 @@ function loadCartFromLocalStorage() {
 
 // Memanggil fungsi updateCartDisplay untuk pembaruan awal
 updateCartDisplay();
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Memuat keranjang dari localStorage saat halaman dimuat
-  loadCartFromLocalStorage();
-
-  // Mendapatkan nilai total dari localStorage
-  const totalFromLocalStorage = localStorage.getItem("total");
-
-  // Menetapkan nilai total harga ke dalam input dengan ID 'form-total'
-  document.getElementById("form-total").value = totalFromLocalStorage;
-});
-
-
-
-/// alert page order-form
-// Mendapatkan elemen gambar
-var img = document.querySelector(".order-button");
-
-// Menambahkan event listener
-img.addEventListener("click", function () {
-  alert("Your order succeeds! Food will be delivered immedietly");
-});
-
-
 
